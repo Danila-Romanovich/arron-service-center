@@ -1,0 +1,24 @@
+.timer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: $text-color;
+    font-size: 32px;
+    font-weight: 700;
+    &__block {
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        width: 48px;
+        height: 55px;
+
+        color: $dop-color;
+        font-size: 12px;
+        font-weight: 700;
+        span {
+            color: $text-color;
+            font-size: 32px;
+        } 
+    }   
+}

@@ -1,0 +1,23 @@
+@import 'reset';
+@import 'base/variables';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #F4F9FC;
+    font-family: 'Gilroy';
+}
+
+.container {
+    margin: 0 auto;
+    width: 1360px;
+    padding: 0 30px;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/timer';
