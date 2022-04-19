@@ -65,7 +65,7 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(webpHTML())
+        //.pipe(webpHTML())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
@@ -77,7 +77,7 @@ function css() {
         }).on('error', sass.logError))
         .pipe(group_media())
         .pipe(autoprefixer())
-        .pipe(webpCss())
+        //.pipe(webpCss())
         .pipe(dest(path.build.css))
         .pipe(dest(source_folder + "/css"))
         .pipe(cleanCSS({
@@ -199,7 +199,7 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, fontCSS, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(js, css, fontCSS, images, html, fonts)); 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontCSS = fontCSS;

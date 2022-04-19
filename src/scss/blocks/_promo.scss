@@ -122,10 +122,11 @@
         top: -35px;
         display: flex;
         align-items: flex-end;
-        picture {
-            margin-left: 20px;
-            padding-bottom: 10px;
-        }
+    &__fire{
+        display: block;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
     }
     &__advantages {
         display: flex;

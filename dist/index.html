@@ -1,1 +1,183 @@
-<!DOCTYPE html><html lang="ru"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="css/font.css">    <link rel="stylesheet" href="css/style.min.css">    <title>Шаблон</title></head><body>    <header class="header">        <div class="header__wrapper">            <div class="header__menu">                <picture><source srcset="img/logo/Logologo_full.svg" type="image/webp"><img src="img/logo/Logologo_full.svg" alt="логотип сервисного центра Arron"></picture>                <ul class="header__list">                    <li class="header__item"><a href="#" class="header__link">Наши услуги</a></li>                    <li class="header__item"><a href="#" class="header__link">О компании</a></li>                    <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>                    <li class="header__item"><a href="#" class="header__link">Выполненные заказы</a></li>                    <li class="header__item"><a href="#" class="header__link">Контакты</a></li>                </ul>            </div>            <div class="header__contacts">                <div class="header__adress">                    <picture><source srcset="img/icons/map-pin.svg" type="image/webp"><img src="img/icons/map-pin.svg" alt=""></picture>                    <div class="header__location">                        г. Кишинев, ул. Бэнулеску Бодони, д.33                        <a href="#" class="header__link-on-map">Мы на карте</a>                    </div>                </div>                <div class="header__tel">                    <a href="tel:069827738" class="header__number">069 82 77 38</a>                    <span class="header__slash">/</span>                    <a href="tel:079927738" class="header__number">079 92 77 38</a>                    <a href="tel:069827738" class="header__tel-box">                           <span class="icon-mobile"></span>                    </a>                </div>            </div>        </div> <!-- /header__wrapper-->    </header> <!-- /header -->    <section class="promo">        <div class="container">            <div class="promo__wrapper">                <div class="promo__text">                    <h1 class="title">Проблемы <br> с Вашим устройством?</h1>                    <p class="descr">                        Решаем любые проблемы!<br>                        Большой склад и опытные мастера                    </p>                    <button class="button">Бесплатная консультация</button>                </div>                <div class="promo__master">                    <div class="promo__big-circle"></div>                    <div class="promo__circle-punktir">                        <div class="promo__mini-circle">                            <span class="icon-gear"></span>                        </div>                        <div class="promo__mini-circle promo__mini-circle_phone">                            <span class="icon-phone"></span>                        </div>                        <div class="promo__mini-circle promo__mini-circle_monitor">                            <span class="icon-monitor"></span>                        </div>                        <div class="promo__mini-circle promo__mini-circle_laptop">                            <span class="icon-laptop"></span>                        </div>                        <div class="promo__light"></div>                        <picture><source srcset="img/promo/Master.webp" type="image/webp"><img src="img/promo/Master.png" alt="" class="promo__img"></picture>                    </div>                    <div class="promo__sale-wrapper">                        <div class="promo__sale">                            <div class="title title_sale">50%</div>                            <picture><source srcset="img/icons/fire.svg" type="image/webp"><img src="img/icons/fire.svg" alt="" class="promo__fire"></picture>                        </div>                        <div class="descr descr_sale">скидка на ремонт телефонов, ноутбуков и планшетов до                            <span>-50%</span>                        </div>                        <hr>                        <div class="subtitle subtitle_sale">Конец акции:</div>                        <div class="timer">                            <div class="timer__block">                                <span id="days">12</span>                                дней                            </div>                            :                            <div class="timer__block">                                <span id="hours">20</span>                                часов                            </div>                            :                            <div class="timer__block">                                <span id="minutes">56</span>                                минут                            </div>                        </div>                    </div>                </div>            </div>            <div class="promo__advantages">                <div class="promo__item">                    <picture><source srcset="img/icons/shipping.svg" type="image/webp"><img src="img/icons/shipping.svg" alt="" class="promo__icon"></picture>                    <div class="subtitle">Курьер  по городу</div>                    <div class="descr descr_small">Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</div>                </div>                <div class="promo__item">                    <picture><source srcset="img/icons/exchange.svg" type="image/webp"><img src="img/icons/exchange.svg" alt="" class="promo__icon"></picture>                    <div class="subtitle">Подменный телефон -  Беслатно</div>                    <div class="descr descr_small">Телефон взамен Беслатно, пока ваш в ремонте</div>                </div>                <div class="promo__item">                    <picture><source srcset="img/icons/care.svg" type="image/webp"><img src="img/icons/care.svg" alt="" class="promo__icon"></picture>                    <div class="subtitle">Забота о вас</div>                    <div class="descr descr_small">Незначительные поломки - <br>делаем бесплатно.</div>                </div>            </div>        </div>            </section></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Шаблон</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__menu">
+                <img src="img/logo/Logologo_full.svg" alt="логотип сервисного центра Arron">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link">Наши услуги</a></li>
+                    <li class="header__item"><a href="#" class="header__link">О компании</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Выполненные заказы</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="header__contacts">
+                <div class="header__adress">
+                    <img src="img/icons/map-pin.svg" alt="">
+                    <div class="header__location">
+                        г. Кишинев, ул. Бэнулеску Бодони, д.33
+                        <a href="#" class="header__link-on-map">Мы на карте</a>
+                    </div>
+                </div>
+                <div class="header__tel">
+                    <a href="tel:069827738" class="header__number">069 82 77 38</a>
+                    <span class="header__slash">/</span>
+                    <a href="tel:079927738" class="header__number">079 92 77 38</a>
+                    <a href="tel:069827738" class="header__tel-box">   
+                        <span class="icon-mobile"></span>
+                    </a>
+                </div>
+            </div>
+        </div> <!-- /header__wrapper-->
+    </header> <!-- /header -->
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <div class="promo__text">
+                    <h1 class="title">Проблемы <br> с Вашим устройством?</h1>
+                    <p class="descr">
+                        Решаем любые проблемы!<br>
+                        Большой склад и опытные мастера
+                    </p>
+                    <button class="button">Бесплатная консультация</button>
+                </div>
+                <div class="promo__master">
+                    <!-- <div class="promo__big-circle"></div> -->
+                    <div class="promo__circle-punktir">
+                        <div class="promo__mini-circle">
+                            <span class="icon-gear"></span>
+                        </div>
+                        <div class="promo__mini-circle promo__mini-circle_phone">
+                            <span class="icon-phone"></span>
+                        </div>
+                        <div class="promo__mini-circle promo__mini-circle_monitor">
+                            <span class="icon-monitor"></span>
+                        </div>
+                        <div class="promo__mini-circle promo__mini-circle_laptop">
+                            <span class="icon-laptop"></span>
+                        </div>
+                        <div class="promo__light"></div>
+                        <img src="img/promo/Master.png" alt="" class="promo__img">
+                    </div>
+
+                    <div class="promo__sale-wrapper">
+                        <div class="promo__sale">
+                            <div class="title title_sale">50%</div>
+                            <img src="img/icons/fire.svg" class="promo__fire" alt="">
+                        </div>
+                        <div class="descr descr_sale">скидка на ремонт телефонов, ноутбуков и планшетов до
+                            <span>-50%</span>
+                        </div>
+                        <hr>
+                        <div class="subtitle subtitle_sale">Конец акции:</div>
+                        <div class="timer">
+                            <div class="timer__block">
+                                <span id="days">12</span>
+                                дней
+                            </div>
+                            :
+                            <div class="timer__block">
+                                <span id="hours">20</span>
+                                часов
+                            </div>
+                            :
+                            <div class="timer__block">
+                                <span id="minutes">56</span>
+                                минут
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__advantages">
+                <div class="promo__item">
+                    <img src="img/icons/shipping.svg" alt="" class="promo__icon">
+                    <div class="subtitle">Курьер  по городу</div>
+                    <div class="descr descr_small">Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</div>
+                </div>
+
+                <div class="promo__item">
+                    <img src="img/icons/exchange.svg" alt="" class="promo__icon">
+                    <div class="subtitle">Подменный телефон -  Беслатно</div>
+                    <div class="descr descr_small">Телефон взамен Беслатно, пока ваш в ремонте</div>
+                </div>
+
+                <div class="promo__item">
+                    <img src="img/icons/care.svg" alt="" class="promo__icon">
+                    <div class="subtitle">Забота о вас</div>
+                    <div class="descr descr_small">Незначительные поломки - <br>делаем бесплатно.</div>
+                </div>
+            </div>
+        </div> 
+        
+    </section><!-- /promo -->
+
+    <section class="gadgets">
+        <div class="container">
+            <div class="gadgets__wrapper">
+                <div class="title title_medium">Мы работаем <br>c устройствами:</div>
+                <div class="products">
+                    <img src="img/gadgets/bg-item.svg" alt="" class="products__bg"></img>
+                    <span class="icon-Wave products__bg-left"></span>
+                    <img src="img/gadgets/iphone.png" alt="" class="products__img">
+                    <div class="subtitle subtitle_gadgets">Apple</div>
+                    <div class="products__circle">
+                        <img src="img/icons/apple.svg" alt="">
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/gadgets/bg-item.svg" alt="" class="products__bg"></img>
+                    <span class="icon-Dots products__bg-left"></span>
+                    <img src="img/gadgets/smartphone.png" alt="" class="products__img">
+                    <div class="subtitle subtitle_gadgets">Android</div>
+                    <div class="products__circle">
+                        <img src="img/icons/android.svg" alt="">
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="img/gadgets/bg-item.svg" alt="" class="products__bg"></img>
+                    <span class="icon-Arrows products__bg-left"></span>
+                    <span class="icon-sector products__bg-right"></span>
+                    <img src="img/gadgets/watch.png" alt="" class="products__img">
+                    <div class="subtitle subtitle_gadgets">Гаджетами</div>
+                </div>
+                <div class="products">
+                    <img src="img/gadgets/bg-item.svg" alt="" class="products__bg"></img>
+                    <span class="icon-Wave products__bg-left"></span>
+                    <span class="icon-sector products__bg-right"></span>
+                    <img src="img/gadgets/notebook.png" alt="" class="products__img">
+                    <div class="subtitle subtitle_gadgets">Ноутбуками</div>
+                </div>
+                <div class="products">
+                    <img src="img/gadgets/bg-item.svg" alt="" class="products__bg"></img>
+                    <span class="icon-Arrows products__bg-left"></span>
+                    <span class="icon-sector products__bg-right"></span>
+                    <img src="img/gadgets/pc.png" alt="" class="products__img">
+                    <div class="subtitle subtitle_gadgets">Моноблоками и PC</div>
+                </div>
+                <div class="products">
+                    <img src="img/gadgets/bg-item.svg" alt="" class="products__bg"></img>
+                    <span class="icon-Dots products__bg-left"></span>
+                    <span class="icon-sector products__bg-right"></span>
+                    <img src="img/gadgets/gamepad.png" alt="" class="products__img">
+                    <div class="subtitle subtitle_gadgets">Другими устройствами</div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
