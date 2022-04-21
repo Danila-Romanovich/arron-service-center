@@ -1,0 +1,28 @@
+.about-us {
+    min-height: 545px;
+    background-color: #EBF3F8;
+    padding-top: 80px;
+    &__wrapper {
+        display: flex;
+    }
+    &__demonstration {
+        width: 333px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 110px;
+        
+    }
+    &__benefits {
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 345px;
+        margin-right: 80px;
+    }
+    &__play {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+}

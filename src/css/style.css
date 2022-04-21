@@ -334,6 +334,13 @@ body {
   background-color: #fc142f;
 }
 
+.button_about {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   margin-top: 150px;
   font-family: "Bebas Neue";
@@ -491,4 +498,37 @@ body {
   border-radius: 100%;
   background-color: #fff;
   box-shadow: 0px 20px 40px rgba(255,107,0,.13),0px 10px 10px rgba(255,107,0,.05);
+}
+
+.about-us {
+  min-height: 545px;
+  background-color: #ebf3f8;
+  padding-top: 80px;
+}
+
+.about-us__wrapper {
+  display: flex;
+}
+
+.about-us__demonstration {
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 110px;
+}
+
+.about-us__benefits {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us__item {
+  width: 345px;
+  margin-right: 80px;
+}
+
+.about-us__play {
+  font-size: 25px;
+  margin-left: 15px;
 }
