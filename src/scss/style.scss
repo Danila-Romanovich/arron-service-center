@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     width: 1360px;
     padding: 0 30px;
@@ -24,3 +25,4 @@ body {
 @import 'blocks/gadgets';
 @import 'blocks/products';
 @import 'blocks/about-us';
+@import 'blocks/reviews';
