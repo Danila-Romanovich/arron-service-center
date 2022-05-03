@@ -317,8 +317,6 @@ body {
 }
 
 .button {
-  width: 285px;
-  height: 65px;
   background-color: #e2001a;
   border: none;
   border-radius: 15px;
@@ -327,6 +325,11 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+}
+
+.button_main {
+  width: 285px;
+  height: 65px;
   text-transform: uppercase;
 }
 
@@ -336,9 +339,16 @@ body {
 
 .button_about {
   width: 180px;
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button_services {
+  margin-top: 30px;
+  width: 330px;
+  height: 80px;
 }
 
 .button__prev,
@@ -348,6 +358,9 @@ body {
   border-radius: 100%;
   width: 48px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   font-weight: 600;
   color: #e2001a;
@@ -385,10 +398,16 @@ body {
   line-height: 85px;
 }
 
-.title_reviews {
+.title_slider {
   margin-top: 0;
   font-size: 56px;
   line-height: 56px;
+}
+
+.title_services {
+  margin-top: 0;
+  font-size: 48px;
+  line-height: 48px;
 }
 
 .subtitle {
@@ -435,6 +454,13 @@ body {
 .descr_small {
   margin: 0;
   font-size: 18px;
+  line-height: 18px;
+}
+
+.descr_services {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .timer {
@@ -531,6 +557,7 @@ body {
 .about-us {
   min-height: 545px;
   background-color: #ebf3f8;
+  background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%);
   padding-top: 80px;
 }
 
@@ -561,29 +588,35 @@ body {
   margin-left: 15px;
 }
 
-.reviews {
+.slider {
   width: 100%;
   position: relative;
-  min-height: 660px;
-  padding: 120px 0;
-  background-color: #ebf3f8;
+  min-height: 400px;
+  margin-top: 120px;
 }
 
-.reviews__buttons {
+.slider_portfolio {
+  padding-top: 80px;
+  background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%);
+}
+
+.slider__buttons {
   position: absolute;
   top: 0;
   right: 30px;
-}
-
-.reviews__video-wrapper {
-  margin-top: 60px;
-}
-
-.reviews__list {
   display: flex;
 }
 
-.reviews__item {
+.slider__media-wrapper {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+}
+
+.slider__item {
   position: relative;
   overflow: hidden;
   width: 295px;
@@ -592,7 +625,12 @@ body {
   border-radius: 30px;
 }
 
-.reviews__img {
+.slider__item_portfolio {
+  width: 403px;
+  height: 400px;
+}
+
+.slider__img {
   display: block;
   position: absolute;
   height: 100%;
@@ -602,7 +640,13 @@ body {
   transform: translate3d(-50%, -50%, 0);
 }
 
-.reviews__play-circle {
+.slider__img_portfolio {
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.slider__play-circle {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -619,24 +663,24 @@ body {
   cursor: pointer;
 }
 
-.reviews__play {
+.slider__play {
   font-size: 30px;
 }
 
-.reviews__dots-wrapper {
+.slider__dots-wrapper {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.reviews__dots-list {
+.slider__dots-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.reviews__dot {
+.slider__dot {
   margin: 0 15px;
   width: 5px;
   height: 5px;
@@ -646,9 +690,64 @@ body {
   cursor: pointer;
 }
 
-.reviews__dot_active {
+.slider__dot_active {
   background-color: rgba(68,68,68,0);
   width: 12px;
   height: 12px;
   border: 2px #e2001a solid;
+}
+
+.services {
+  margin-top: 120px;
+  width: 100%;
+  position: relative;
+}
+
+.services__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__help-list {
+  width: 430px;
+}
+
+.services__chek-list {
+  margin-top: 25px;
+  width: 330px;
+  display: flex;
+  align-items: center;
+}
+
+.services__img {
+  width: 22px;
+  height: 33px;
+  margin-right: 10px;
+}
+
+.services__our-services {
+  display: flex;
+}
+
+.services__list-item {
+  width: 330px;
+  margin-right: 40px;
+}
+
+.services__item {
+  position: relative;
+  display: flex;
+  align-items: top;
+  margin-top: 20px;
+  padding-left: 22px;
+}
+
+.services__dot {
+  position: absolute;
+  background-color: #e2001a;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  left: 0;
+  top: 5px;
 }

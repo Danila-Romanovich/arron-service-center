@@ -50,7 +50,7 @@
                         Решаем любые проблемы!<br>
                         Большой склад и опытные мастера
                     </p>
-                    <button class="button">Бесплатная консультация</button>
+                    <button class="button button_main">Бесплатная консультация</button>
                 </div>
                 <div class="promo__master">
                     <!-- <div class="promo__big-circle"></div> -->
@@ -214,43 +214,154 @@
         </div>
     </section><!-- about-us -->
 
-    <section class="reviews">
+    <section class="slider">
         <div class="container">
-            <h2 class="title title_reviews">Отзывы счастливых клиентов</h2>
-            <div class="reviews__buttons">
-                <button class="button__prev"><</button>
-                <button class="button__next">></button>
+            <h2 class="title title_slider">Отзывы счастливых клиентов</h2>
+            <div class="slider__buttons">
+                <button class="button__prev"><img src="img/icons/slide-prev.svg" alt=""></button>
+                <button class="button__next"><img src="img/icons/slide-next.svg" alt=""></button>
             </div>
-            <div class="reviews__video-wrapper">
-                <ul class="reviews__list">
-                    <li class="reviews__item">
-                        <img src="img/video/video_1.jpg" alt="" class="reviews__img">
-                        <button class="reviews__play-circle"><span class="icon-play reviews__play"></span></button>
+            <div class="slider__media-wrapper">
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <img src="img/video/video_1.jpg" alt="" class="slider__img">
+                        <button class="slider__play-circle"><span class="icon-play slider__play"></span></button>
                     </li>
-                    <li class="reviews__item">
-                        <img src="img/video/video_2.jpg" alt="" class="reviews__img">
-                        <button class="reviews__play-circle"><span class="icon-play reviews__play"></span></button>
+                    <li class="slider__item">
+                        <img src="img/video/video_2.jpg" alt="" class="slider__img">
+                        <button class="slider__play-circle"><span class="icon-play slider__play"></span></button>
                     </li>
-                    <li class="reviews__item">
-                        <img src="img/video/video_3.jpg" alt="" class="reviews__img">
-                        <button class="reviews__play-circle"><span class="icon-play reviews__play"></span></button>
+                    <li class="slider__item">
+                        <img src="img/video/video_3.jpg" alt="" class="slider__img">
+                        <button class="slider__play-circle"><span class="icon-play slider__play"></span></button>
                     </li>
-                    <li class="reviews__item">
-                        <img src="img/video/video_4.jpg" alt="" class="reviews__img">
-                        <button class="reviews__play-circle"><span class="icon-play reviews__play"></span></button>
+                    <li class="slider__item">
+                        <img src="img/video/video_4.jpg" alt="" class="slider__img">
+                        <button class="slider__play-circle"><span class="icon-play slider__play"></span></button>
                     </li>
                 </ul>
-                <div class="reviews__dots-wrapper">
-                    <ul class="reviews__dots-list">
-                        <li class="reviews__dot reviews__dot_active"></li>
-                        <li class="reviews__dot"></li>
-                        <li class="reviews__dot"></li>
-                        <li class="reviews__dot"></li>
+                <div class="slider__dots-wrapper">
+                    <ul class="slider__dots-list">
+                        <li class="slider__dot slider__dot_active"></li>
+                        <li class="slider__dot"></li>
+                        <li class="slider__dot"></li>
+                        <li class="slider__dot"></li>
                     </ul> 
                 </div>
             </div>
         </div>
 
+    </section> <!-- reviews -->
+
+    <section class="slider slider_portfolio">
+        <div class="container">
+            <h2 class="title title_slider">Выполненные заказы</h2>
+            <div class="slider__buttons">
+                <button class="button__prev"><img src="img/icons/slide-prev.svg" alt=""></button>
+                <button class="button__next"><img src="img/icons/slide-next.svg" alt=""></button>
+            </div>
+
+            <div class="slider__media-wrapper">
+                <ul class="slider__list">
+                    <li class="slider__item slider__item_portfolio">
+                        <img src="img/portfolio/1.jpg" alt="" class="slider__img slider__img_portfolio">
+                    </li>
+                    <li class="slider__item slider__item_portfolio">
+                        <img src="img/portfolio/2.jpg" alt="" class="slider__img slider__img_portfolio">
+                    </li>
+                    <li class="slider__item slider__item_portfolio">
+                        <img src="img/portfolio/3.jpg" alt="" class="slider__img slider__img_portfolio">
+                    </li>
+                    
+                </ul>
+                <div class="slider__dots-wrapper">
+                    <ul class="slider__dots-list">
+                        <li class="slider__dot slider__dot_active"></li>
+                        <li class="slider__dot"></li>
+                        <li class="slider__dot"></li>
+                        <li class="slider__dot"></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </section> <!-- portfolio -->
+
+    <section class="services">
+        <div class="container">
+            <div class="services__wrapper">
+                <div class="services__help-list">
+                    <div class="title title_services">Что делать если ноутбук или телефон медлено работает</div>
+                    <div class="services__chek-list">
+                        <img src="img/icons/chck_lst.svg" alt="чек лист - что делать, если ноутбук или телефон грузится" class="services__img">
+                        <div class="descr descr_services">Получите чек лист - Что делать, если ноутбук или телефон грузится</div>
+                    </div>
+                    <button class="button button_services">Получить чек лист </button>
+                </div>
+                <div class="services__our-services">
+                    <div class="services__list-item">
+                        <div class="title title_services">наши услуги</div>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт ноутбуков</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт смартфонов</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">заправка и ремонт картриджей</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">установка СНПЧ</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт компьютеров</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт моноблоков</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__list-item">
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт планшетов</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт КПК</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт мониторов</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт принтеров</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">ремонт роутеров</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">восстановление жестких дисков</div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__dot"></div>
+                                <div class="descr descr_small">компьютерная помощь и IT аутсорсинги др.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

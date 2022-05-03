@@ -1,0 +1,46 @@
+.services {
+    margin-top: 120px;
+    width: 100%;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__help-list {
+        width: 430px;
+    }
+    &__chek-list {
+        margin-top: 25px;
+        width: 330px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 22px;
+        height: 33px;
+        margin-right: 10px;
+    }
+    &__our-services {
+        display: flex;
+    }
+    &__list-item {
+        width: 330px;
+        margin-right: 40px;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: top;
+        margin-top: 20px;
+        padding-left: 22px;
+    }
+    &__dot {
+        position: absolute;
+        background-color: $btn-color;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        left: 0;
+        top: 5px;
+    }
+}

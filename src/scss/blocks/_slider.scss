@@ -1,16 +1,22 @@
-.reviews {
+.slider {
     width: 100%;
     position: relative;
-    min-height: 660px;
-    padding: 120px 0;
-    background-color: #EBF3F8;
+    min-height: 400px;
+    margin-top: 120px;
+    &_portfolio {
+        padding-top: 80px;
+        background: linear-gradient(180deg, #EBF3F8 0%, rgba(235, 243, 248, 0) 100%);
+    }
+    
     &__buttons {
         position: absolute;
         top: 0;
         right: 30px;
+        display: flex;
     }
-    &__video-wrapper {
+    &__media-wrapper {
         margin-top: 60px;
+        overflow: hidden;
     }
     &__list {
         display: flex;
@@ -23,6 +29,10 @@
         height: 250px;
         margin: 0 15px;
         border-radius: 30px;
+        &_portfolio {
+            width: 403px;
+            height: 400px;
+        }
     }
     &__img {
         display: block;
@@ -33,6 +43,11 @@
         z-index: 1;
 
         transform: translate3d(-50%, -50%, 0);
+        &_portfolio {
+            min-width: 100%;
+            height: auto;
+            min-height: 100%;
+        }
     }
     &__play-circle {
         position: absolute;
